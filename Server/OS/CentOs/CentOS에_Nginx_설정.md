@@ -50,7 +50,7 @@
 
         } 
 
-    ​
+    
 
         location ~ \.php$ { 
 
@@ -64,7 +64,7 @@
 
         } 
 
-    ​
+    
 
         if (!-e $request_filename ) { 
 
@@ -73,7 +73,7 @@
         } 
 
     } 
-    ```​
+    ```
 
     CentOS8
 
