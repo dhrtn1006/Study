@@ -97,7 +97,9 @@
 
     `vi /etc/php-fpm.d/www.conf`
 
+
 6. 초기 설치 시 Apache로 세팅되는데 이것을 전부 nginx로 변경한다.
+
 
 7. php-fpm과 nginx 연동 경로를 nginx 서버 파일과 동일하게 설정한다. (포트 포함)
 
