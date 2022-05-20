@@ -68,7 +68,6 @@
     chroot_list_enable=YES
 
     chroot_list_file=/etc/vsftpd/chroot_list
-
     ```
 
 9. /etc/vsftpd 폴더 내부에 chroot_list 파일을 생성하고 내용에 root를 넣는다.
