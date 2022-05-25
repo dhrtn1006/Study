@@ -52,7 +52,7 @@
 
     7.1 remote 제거
 
-        `git remote remove origin`
+        git remote remove origin
 
     7.2 새 remote 추가
 
