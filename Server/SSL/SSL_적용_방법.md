@@ -28,7 +28,7 @@
 8. 개인키 복호화
 
     ```
-    openssl rsa -in ssl.key -out app.1inmarket.co.kr.key
+    openssl rsa -in ssl.key -out testdomain.com.key
     ```
 
 9. nginx.conf 파일을 수정
