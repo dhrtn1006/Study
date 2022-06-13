@@ -25,7 +25,15 @@
 
     ssh-add -K ~/.ssh/Key File Name
     
+
     # eval "$(ssh-agent -s)" 명령어를 실행하지 않고 ssh-add 시 Could not open a connection to your authentication agent. 에러 발생
+
+
+    # Key File에 Password 설정 시 ssh-add 명령어에 -K 옵션을 추가할 경우 Password를 묻지 않아
+
+    - Provider "internal" returned failure -4
+
+    - Unable to load resident keys: device not found 에러 발생
     ```
 
 4. github에 SSH Key 추가
