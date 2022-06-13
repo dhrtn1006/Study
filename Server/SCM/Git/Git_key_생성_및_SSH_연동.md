@@ -48,6 +48,8 @@
 
     ```
     ssh -T git@github.com
+    
+    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 
     # Hi schooldevops! You've successfully authenticated, but GitHub does not provide shell access. 문구 출력 시 성공
     ```
