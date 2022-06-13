@@ -31,9 +31,14 @@
 
     # Key File에 Password 설정 시 ssh-add 명령어에 -K 옵션을 추가할 경우 Password를 묻지 않아
 
-    - Provider "internal" returned failure -4
+    # Provider "internal" returned failure -4
 
-    - Unable to load resident keys: device not found 에러 발생
+    # Unable to load resident keys: device not found 에러 발생
+
+
+    # Linux에서 등록 시 Key File 의 권한을 400으로 설정
+
+    # 그렇지 않을 경우 WARNING: UNPROTECTED PRIVATE KEY FILE! 에러 발생
     ```
 
 4. github에 SSH Key 추가
