@@ -43,10 +43,22 @@
 
 4. github에 SSH Key 추가
 
+    4-1. 해당 github 계정에 Public Key 추가
+
     ```
     Setting > SSH and GPG keys > new SSH key
 
-    원하는 Title을 입력하고 Key에 생성한 공개키 (Key File Name.pub) 내용을 입력
+    # 원하는 Title을 입력하고 Key에 생성한 공개키 (Key File Name.pub) 내용을 입력
+    ```
+    
+    4-2. 계정 내부의 Repository에 Public Key 추가
+
+    ```
+    Repository > Setting > Deploy keys > Add deploy key
+
+    # 원하는 Title을 입력하고 Key에 생성한 공개키 (Key File Name.pub) 내용을 입력 후 읽기/쓰기 권한 추가
+    
+    # Key를 추가한 Repository 외에 다른 Repository는 접근 불가
     ```
 
 5. Key 등록 테스트
