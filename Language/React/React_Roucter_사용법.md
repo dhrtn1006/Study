@@ -40,13 +40,9 @@ React Roucter 사용법
     
     ```
     export default function Home() {
-    
       return (
-      
         ...
-        
       );
-      
     }
     ```
 
@@ -71,22 +67,14 @@ React Roucter 사용법
     
     ```
     export default function Board() {
-    
       return (
-      
         ...
-        
       );
-      
     }
     
     export function News() {
-    
       return (
-      
         ...
-        
       );
-      
     }
     ```
