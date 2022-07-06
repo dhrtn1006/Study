@@ -20,29 +20,73 @@ React Roucter 사용법
 
 4. router 문법
 
-    4-1. v6 이상
+    4-1. 하나의 Components에 하나의 Router를 연결하는 경우
 
+    App.js
+    
     ```
+    import Home from "./Home"
+    
     <Router>
         <Header />
         <Routes>
             <Route path="/" element={<Home />} exact></Route>
-            <Route path="/board" element={<Board />}></Route>
         </Routes>
         <Footer />
     </Router>
     ```
-
-    4-2. v6 미만
-
+    
+    Home.js
+    
     ```
-    import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+    export default function Home() {
+    
+      return (
+      
+        ...
+        
+      );
+      
+    }
+    ```
+
+    4-2. 하나의 Components에 여러개의 Router를 연결하는 경우
+    
+    App.js
+    
+    ```
+    import Board, {News} from "./Home"
+    
     <Router>
         <Header />
-        <Switch>
-            <Route path="/" exact><Home /></Route>
-            <Route path="/Board"><Board /></Route>
-        </Switch>
+        <Routes>
+            <Route path="/board" element={<Board />} exact></Route>
+            <Route path="/board/news" element={<News />}></Route>
+        </Routes>
         <Footer />
     </Router>
+    ```
+    
+    Home.js
+    
+    ```
+    export default function Board() {
+    
+      return (
+      
+        ...
+        
+      );
+      
+    }
+    
+    export function News() {
+    
+      return (
+      
+        ...
+        
+      );
+      
+    }
     ```
