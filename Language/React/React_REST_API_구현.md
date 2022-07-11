@@ -8,23 +8,14 @@
 
     ```
     export async function getTestApi() {
-
         try {
-
             return await fetch(url)
-
             .then(function (response) { return response.json() })
-
             .catch((error) => console.log("error:", error));
-
         } catch (error) {
-
             console.log(error);
-
             return 0;
-
         }
-
     }
     ```
 
@@ -38,22 +29,14 @@
 
     ```
     const [data, setData] = useState([]);
-
     const getData = () => {
-
         api.getTestApi().then(function(data) {
-
             setData(data);
-
         });
-
     }
 
-
     useEffect(() => {
-
         getData();
-
     }, []);
     ```
 
