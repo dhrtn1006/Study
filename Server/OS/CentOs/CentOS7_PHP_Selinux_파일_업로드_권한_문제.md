@@ -41,7 +41,9 @@
     systemctl restart php-fpm
     ```
 
-6. Selinux 일시 정지 후 업로드 확인
+6. PHP에서 mkdir 시 여전히 permission denied 에러가 발생
+
+7. Selinux 일시 정지 후 업로드 확인
 
     ```
     getenforce
@@ -57,9 +59,9 @@
     // Selinux 일시정지 해제
     ```
 
-7. Selinux 일시 정지 후 업로드 정상 작동
+8. Selinux 일시 정지 후 업로드 정상 작동
 
-8. Selinux context 설정 확인
+9. Selinux context 설정 확인
 
     ```
     ls -Z
@@ -70,12 +72,12 @@
 
     ```
 
-8. 보안 정책으로 인해 WRIGHT 권한이 없는 상황
+10. 보안 정책으로 인해 WRIGHT 권한이 없는 상황
 
-9. Selinux context 권한 재지정
+11. Selinux context 권한 재지정
 
     ```
     chcon -R -t httpd_sys_content_rw_t [dir]
     ```
 
-10. Selinux 일시 정지 해제 후 업로드 테스트 => 정상작동
+12. Selinux 일시 정지 해제 후 업로드 테스트 => 정상작동
